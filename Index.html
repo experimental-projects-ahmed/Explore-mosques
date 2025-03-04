@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+
+<html lang="ar">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>تقييم المساجد</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>🕌 نظام تقييم المساجد</h1>
+
+    <form id="evaluation-form">
+
+      <label for="date">📅 التاريخ:</label>
+
+      <input type="text" id="date" readonly>
+
+      <label for="mosque-name">🏛 اسم المسجد:</label>
+
+      <input type="text" id="mosque-name" required>
+
+      <label for="mosque-address">📍 العنوان:</label>
+
+      <input type="text" id="mosque-address" required>
+
+      <label for="evaluator">👤 اسم المُقيِّم:</label>
+
+      <input type="text" id="evaluator" required>
+      <h3>📌 وصف المسجد:</h3>
+
+      <label for="mosque-type">🏛 نوع المصلى:</label>
+
+      <select id="mosque-type">
+
+        <option>مصلى رجال</option>
+
+        <option>مصلى سيدات</option>
+
+      </select>
+      <h3>📋 حالة المسجد:</h3>
+
+      <label>🔹 السجاد:</label>
+
+      <select id="carpet">
+
+        <option>جيد</option>
+
+        <option>يحتاج تنظيف بسيط</option>
+
+        <option>سيئ جداً</option>
+
+      </select>
+
+      <label>🔹 المراوح والتكييفات:</label>
+
+      <select id="fans">
+
+        <option>جيدة</option>
+
+        <option>تحتاج تنظيف بسيط</option>
+
+        <option>سيئة جداً</option>
+
+      </select>
+
+      <label>🔹 السقف:</label>
+
+      <select id="ceiling">
+
+        <option>نظيف</option>
+
+        <option>يحتاج تهليس</option>
+
+      </select>
+
+      <label>🔹 الحوائط:</label>
+
+      <select id="walls">
+
+        <option>نظيفة</option>
+        
+       <option>متربة</option>
+
+        <option>متربة جدا</option>
+
+      </select>
+
+      <label>🔹 الحمامات:</label>
+
+      <select id="toilets">
+
+        <option>نظيفة</option>
+
+        <option>تحتاج تنظيف</option>
+
+      </select>
+
+      <label>🔹 الميضة:</label>
+
+      <select id="ablution">
+
+        <option>نظيفة</option>
+
+        <option>تحتاج تنظيف</option>
+
+      </select>
+
+      <label>🔹 الشبابيك:</label>
+
+      <select id="windows">
+
+        <option>نظيفة</option>
+
+        <option>متربة</option>
+        
+        <option>متربة جدا</option>
+
+      </select>
+
+      <label>🔹 المصاحف:</label>
+
+      <select id="qurans">
+
+        <option>نظيفة</option>
+
+        <option>متربة</option>
+        
+        <option>متربة جدا</option>
+
+      </select>
+
+      <label>🔹 الجزامات:</label>
+
+      <select id="shoe-racks">
+
+        <option>نظيفة</option>
+        
+        <option>متربة</option>
+
+        <option>متربة جدا</option>
+
+      </select>
+
+      <h3>🛠 المرافق المتاحة:</h3>
+
+      <label><input type="checkbox" id="vacuum"> ✅ مكنسة كهربائية</label>
+
+      <label><input type="checkbox" id="ladder"> ✅ سلم</label>
+
+      <label><input type="checkbox" id="blower"> ✅ بلور</label>
+
+      <button type="button" id="generate-report">📄 إنشاء التقرير</button>
+
+    </form>
+
+    <div id="report-container" style="display: none;">
+
+      <h2>📌 تقرير تقييم المسجد</h2>
+
+      <div id="report-content"></div>
+
+      <button id="copy-text">📋 نسخ التقرير كنص</button>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
+
+        
