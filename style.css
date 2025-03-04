@@ -1,0 +1,135 @@
+
+body {
+
+    font-family: "Tajawal", sans-serif;
+
+    background: #f8f9fa;
+
+    text-align: right;
+
+    direction: rtl;
+
+    padding: 20px;
+
+}
+
+.container {
+
+    max-width: 600px;
+
+    background: white;
+
+    padding: 20px;
+
+    border-radius: 8px;
+
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+
+    margin: auto;
+
+}
+
+h1 {
+
+    text-align: center;
+
+    color: #16a085;
+
+}
+
+form {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+label {
+
+    margin-top: 10px;
+
+    font-weight: bold;
+
+}
+
+input, select {
+
+    padding: 8px;
+
+    margin-top: 5px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+
+}
+h3 {
+
+    margin-top: 20px;
+
+    color: #16a085;
+
+}
+
+button {
+
+    background: #16a085;
+
+    color: white;
+
+    padding: 10px;
+
+    margin-top: 15px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+}
+
+button:hover {
+
+    background: #138d75;
+
+}
+
+#report-container {
+
+    background: white;
+
+    padding: 20px;
+
+    border-radius: 8px;
+
+    border: 1px solid #ddd;
+
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+
+    margin-top: 20px;
+
+    text-align: right;
+
+    word-wrap: break-word;
+
+}
+#report-content {
+
+    line-height: 1.8;
+
+    font-size: 18px;
+
+    color: #333;
+
+    background: #f8f9fa;
+
+    padding: 10px;
+
+    border-radius: 5px;
+
+  }
+                              
