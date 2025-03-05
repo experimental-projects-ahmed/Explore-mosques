@@ -29,11 +29,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 🏛 *اسم المسجد:* ${document.getElementById("mosque-name").value}
 
-🏛 *نوع المصلى:* ${document.getElementById("mosque-type").value}
-
 📍 *العنوان:* ${document.getElementById("mosque-address").value}
 
+📞 **رقم هاتف الإمام:** ${document.getElementById("imam-phone").value}
+
 👤 *اسم المُقيِّم:* ${document.getElementById("evaluator").value}
+
+🏛 *نوع المصلى:* ${document.getElementById("mosque-type").value}
+
 
 📋 *حالة المسجد:*
 
